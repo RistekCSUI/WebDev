@@ -1,0 +1,58 @@
+/* Reset default browser’s behavior */
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Select every class that begin with ‘col-’ */
+[class^='col-'] {
+	padding: 10px;
+	float: left;
+}
+
+/* Float last column to the right */
+[class^='col-']:last-of-type {
+	padding-right: 10px;
+	float: right;
+}
+
+
+/* Clearfix for row container */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Specify width */
+/* Percentage based column. More extensible. */
+.col-100 { width: 100%; }
+.col-75 { width: 75%; }
+.col-66 { width: 66.666666667%; }
+.col-60 { width: 60%; }
+.col-50 { width: 50%; }
+.col-33 { width: 33.333333333%; }
+.col-25 { width: 25%; }
+.col-20 { width: 20%; }
+
+
+/* Make it responsive */
+@media (max-width:720px) {
+	.col-75,
+	.col-66,
+	.col-60,
+	.col-50,
+	.col-33,
+	.col-25,
+	.col-20 {
+		width: 100%;
+	}
+}
