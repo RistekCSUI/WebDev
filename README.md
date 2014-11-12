@@ -30,3 +30,7 @@ Web Development Frameworks
 
 - [Slide Materi](http://goo.gl/l7fw2l)
 
+### Minggu 6
+Database & Web Service
+
+- [Slide Materi](http://goo.gl/YRHKgM)
